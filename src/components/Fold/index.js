@@ -55,7 +55,7 @@ function RowContent({ child, height }) {
         onMouseLeave={() => setShow(false)}
       >
         {!show && !openEditor && (
-          <div style={{ border: "1px solid black" }}></div>
+          <div style={{ borderTop: "2px solid black" }}></div>
         )}
         <button
           style={show ? { opacity: 1 } : { opacity: 0 }}
@@ -72,7 +72,7 @@ function RowContent({ child, height }) {
           {openEditor ? <UpOutlined /> : <DownOutlined />}
         </button>
         {!show && openEditor && (
-          <div style={{ border: "1px solid black" }}></div>
+          <div style={{ borderBottom: "2px solid black" }}></div>
         )}
       </div>
     </div>
@@ -140,7 +140,7 @@ function ColumnContent({ child, width }) {
         onMouseLeave={() => setShow(false)}
       >
         {!show && !openEditor && (
-          <div style={{ border: "1px solid black" }}></div>
+          <div style={{ borderLeft: "2px solid black" }}></div>
         )}
         <button
           style={show ? { opacity: 1 } : { opacity: 0 }}
@@ -157,7 +157,7 @@ function ColumnContent({ child, width }) {
           {openEditor ? <LeftOutlined /> : <RightOutlined />}
         </button>
         {!show && openEditor && (
-          <div style={{ border: "1px solid black" }}></div>
+          <div style={{ borderRight: "2px solid black" }}></div>
         )}
       </div>
     </div>
