@@ -35,8 +35,9 @@ function RowContent({ child, height }) {
             ? {
                 height: "100%",
                 opacity: 1,
+                overflow: "hidden",
               }
-            : { height: "0", opacity: 0 }
+            : { height: "0", opacity: 0, overflow: "hidden" }
         }
       >
         {child}
@@ -103,8 +104,9 @@ function ColumnContent({ child, width }) {
             ? {
                 width: "100%",
                 opacity: 1,
+                overflow: "hidden",
               }
-            : { width: "0", opacity: 0 }
+            : { width: "0", opacity: 0, overflow: "hidden" }
         }
       >
         {child}

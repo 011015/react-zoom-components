@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Drag, RowFold } from "@components";
+import { Drag, RowFold, ColumnFold } from "@components";
 import "./index.css";
 
 function App() {
@@ -14,12 +14,12 @@ function App() {
       <div className="main">
         <div className="drag">
           <p className="drag-title">体验Drag</p>
-          <div style={{ height: 800 }}>
+          <div style={{ height: 500 }}>
             <Drag
               children={[
                 <div
                   style={{
-                    height: 500,
+                    height: "100%",
                     backgroundColor: "pink",
                     display: "flex",
                     justifyContent: "center",
@@ -30,7 +30,7 @@ function App() {
                 </div>,
                 <div
                   style={{
-                    height: 500,
+                    height: "100%",
                     backgroundColor: "purple",
                     display: "flex",
                     justifyContent: "center",
@@ -46,17 +46,33 @@ function App() {
         </div>
         <div className="fold">
           <p className="fold-title">体验RowFold</p>
-          <div style={{ height: 800 }}>
+          <div style={{ height: 500 }}>
             <RowFold
               children={[
-                <div style={{ height: 500, backgroundColor: "pink" }}>
+                <div style={{ height: "100%", backgroundColor: "pink" }}>
                   content1
                 </div>,
-                <div style={{ height: 500, backgroundColor: "purple" }}>
-                  content1
+                <div style={{ height: "100%", backgroundColor: "purple" }}>
+                  content2
                 </div>,
               ]}
               height={["30%", "70%"]}
+            />
+          </div>
+        </div>
+        <div className="fold">
+          <p className="fold-title">体验ColumnFold</p>
+          <div style={{ height: 500 }}>
+            <ColumnFold
+              children={[
+                <div style={{ height: "100%", backgroundColor: "pink" }}>
+                  content1
+                </div>,
+                <div style={{ height: "100%", backgroundColor: "purple" }}>
+                  content2
+                </div>,
+              ]}
+              width={["30%", "70%"]}
             />
           </div>
         </div>

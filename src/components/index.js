@@ -1,4 +1,4 @@
 import Drag from "@components/Drag";
-import { RowFold } from "@components/Fold";
+import { RowFold, ColumnFold } from "@components/Fold";
 
-export { Drag, RowFold };
+export { Drag, RowFold, ColumnFold };
