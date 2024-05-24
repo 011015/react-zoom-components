@@ -4,7 +4,7 @@
   border: 1px solid #d9d9d9;
   border-radius: 6px;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
-  overflow: auto;
+  overflow: hidden;
 }
 .lhq-fold-columnContainer {
   height: 100%;
@@ -35,8 +35,6 @@
 }
 
 .lhq-arrow {
-  width: 100%;
-  height: 100%;
   padding: 4px;
   line-height: 100%;
   border: 1px solid #2e75d3;
@@ -61,36 +59,28 @@
 .lhq-down-arrow {
   width: 0;
   height: 0;
-  transform: translate(0, 50%);
-  border-top: 10px solid black;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid transparent;
+  transform: translate(0, 25%);
+  border: 7px solid transparent;
+  border-top-color: black;
 }
 .lhq-up-arrow {
   width: 0;
   height: 0;
-  transform: translate(0, -50%);
-  border-top: 10px solid transparent;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid black;
+  transform: translate(0, -25%);
+  border: 7px solid transparent;
+  border-bottom-color: black;
 }
 .lhq-right-arrow {
   width: 0;
   height: 0;
-  transform: translate(50%, 0);
-  border-top: 10px solid transparent;
-  border-left: 10px solid black;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid transparent;
+  transform: translate(25%, 0);
+  border: 7px solid transparent;
+  border-left-color: black;
 }
 .lhq-left-arrow {
   width: 0;
   height: 0;
-  transform: translate(-50%, 0);
-  border-top: 10px solid transparent;
-  border-left: 10px solid transparent;
-  border-right: 10px solid black;
-  border-bottom: 10px solid transparent;
+  transform: translate(-25%, 0);
+  border: 7px solid transparent;
+  border-right-color: black;
 }
