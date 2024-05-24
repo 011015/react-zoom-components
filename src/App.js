@@ -2,7 +2,6 @@ import React from "react";
 
 import { Drag, RowFold } from "@components";
 import "./index.css";
-import { RowFold } from "./components/Fold";
 
 function App() {
   return (
