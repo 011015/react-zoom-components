@@ -24,7 +24,7 @@ function App() {
                   Right
                 </div>,
               ]}
-              width={["20%", "80%"]}
+              width={["30%", "70%"]}
             />
           </div>
         </div>
