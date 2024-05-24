@@ -46,13 +46,27 @@ function App() {
         </div>
         <div className="fold">
           <p className="fold-title">体验RowFold</p>
-          <div style={{ height: 500 }}>
+          <div style={{ width: "100%", height: 500 }}>
             <RowFold
               children={[
-                <div style={{ height: "100%", backgroundColor: "pink" }}>
+                <div
+                  style={{
+                    backgroundColor: "pink",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
                   content1
                 </div>,
-                <div style={{ height: "100%", backgroundColor: "purple" }}>
+                <div
+                  style={{
+                    backgroundColor: "purple",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
                   content2
                 </div>,
               ]}
@@ -65,10 +79,24 @@ function App() {
           <div style={{ width: "100%", height: 500 }}>
             <ColumnFold
               children={[
-                <div style={{ height: "100%", backgroundColor: "pink" }}>
+                <div
+                  style={{
+                    backgroundColor: "pink",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
                   content1
                 </div>,
-                <div style={{ height: "100%", backgroundColor: "purple" }}>
+                <div
+                  style={{
+                    backgroundColor: "purple",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
                   content2
                 </div>,
               ]}

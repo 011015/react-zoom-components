@@ -41,7 +41,11 @@ function RowContent({ child, height }) {
         }
       >
         {React.cloneElement(child, {
-          style: { borderRadius: "6px", ...child.props.style },
+          style: {
+            borderRadius: "6px",
+            minHeight: "100%",
+            ...child.props.style,
+          },
         })}
       </div>
       <div
@@ -126,7 +130,11 @@ function ColumnContent({ child, width }) {
         }
       >
         {React.cloneElement(child, {
-          style: { borderRadius: "6px", ...child.props.style },
+          style: {
+            borderRadius: "6px",
+            minHeight: "100%",
+            ...child.props.style,
+          },
         })}
       </div>
       <div
