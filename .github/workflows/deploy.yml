@@ -31,5 +31,6 @@ jobs:
       - name: Deploy Github Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           branch: gh-pages
           folder: experiment
