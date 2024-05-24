@@ -58,7 +58,7 @@
   border-left: 0;
 }
 
-.lhq-up-arrow {
+.lhq-down-arrow {
   width: 0;
   height: 0;
   transform: translate(0, 50%);
@@ -67,7 +67,7 @@
   border-right: 10px solid transparent;
   border-bottom: 10px solid transparent;
 }
-.lhq-down-arrow {
+.lhq-up-arrow {
   width: 0;
   height: 0;
   transform: translate(0, -50%);
@@ -76,7 +76,7 @@
   border-right: 10px solid transparent;
   border-bottom: 10px solid black;
 }
-.lhq-left-arrow {
+.lhq-right-arrow {
   width: 0;
   height: 0;
   transform: translate(50%, 0);
@@ -85,7 +85,7 @@
   border-right: 10px solid transparent;
   border-bottom: 10px solid transparent;
 }
-.lhq-right-arrow {
+.lhq-left-arrow {
   width: 0;
   height: 0;
   transform: translate(-50%, 0);

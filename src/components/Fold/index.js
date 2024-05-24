@@ -79,7 +79,7 @@ export function RowFold({ children, height }) {
   return (
     <div style={{ width: "100%", height: "100%" }}>
       {children.map((child, index) => (
-        <RowContent child={child} height={height[index]} />
+        <RowContent key={index} child={child} height={height[index]} />
       ))}
     </div>
   );
@@ -147,7 +147,7 @@ export function ColumnFold({ children, width }) {
   return (
     <div style={{ width: "100%", height: "100%" }}>
       {children.map((child, index) => (
-        <ColumnContent child={child} width={width[index]} />
+        <ColumnContent key={index} child={child} width={width[index]} />
       ))}
     </div>
   );
