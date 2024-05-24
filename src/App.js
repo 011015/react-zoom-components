@@ -56,7 +56,7 @@ function App() {
                   content2
                 </div>,
               ]}
-              height={["30%", "70%"]}
+              height={["40%", "60%"]}
             />
           </div>
         </div>
@@ -72,7 +72,7 @@ function App() {
                   content2
                 </div>,
               ]}
-              width={["30%", "70%"]}
+              width={["40%", "60%"]}
             />
           </div>
         </div>
