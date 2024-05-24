@@ -62,7 +62,7 @@ function App() {
         </div>
         <div className="fold">
           <p className="fold-title">体验ColumnFold</p>
-          <div style={{ height: 500 }}>
+          <div style={{ width: "100%", height: 500 }}>
             <ColumnFold
               children={[
                 <div style={{ height: "100%", backgroundColor: "pink" }}>

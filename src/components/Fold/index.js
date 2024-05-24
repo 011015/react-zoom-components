@@ -2,19 +2,19 @@ import React, { useState } from "react";
 import "./index.css";
 
 function UpOutlined() {
-  return <span className="lhq-up-arrow" />;
+  return <div className="lhq-up-arrow" />;
 }
 
 function DownOutlined() {
-  return <span className="lhq-down-arrow" />;
+  return <div className="lhq-down-arrow" />;
 }
 
 function LeftOutlined() {
-  return <span className="lhq-left-arrow" />;
+  return <div className="lhq-left-arrow" />;
 }
 
 function RightOutlined() {
-  return <span className="lhq-right-arrow" />;
+  return <div className="lhq-right-arrow" />;
 }
 
 function RowContent({ child, height }) {

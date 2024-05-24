@@ -20,22 +20,17 @@
   position: absolute;
   bottom: 0;
   right: 50%;
-  width: 25px;
-  height: 25px;
   z-index: 2;
 }
 .lhq-fold-arrowColumnContainer {
   position: absolute;
   right: 0;
   top: 50%;
-  width: 25px;
-  height: 25px;
   z-index: 2;
 }
 
 .lhq-arrow {
   padding: 4px;
-  line-height: 100%;
   border: 1px solid #2e75d3;
 }
 .lhq-row-arrow-open {
