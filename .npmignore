@@ -1,7 +1,0 @@
-/.github
-/dist
-/public
-/src
-webpack.dev.js
-webpack.prod.js
-package-lock.json
