@@ -22,22 +22,23 @@ function RowContent({ child, height }) {
   const [show, setShow] = useState(false);
   return (
     <div
-      className={
-        show
-          ? "lhq-fold-rowContainer lhq-fold-selectContainer"
-          : "lhq-fold-rowContainer"
-      }
+      className="lhq-fold-rowContainer"
       style={openEditor ? { height } : { height: "0" }}
     >
       <div
+        className={
+          show
+            ? "lhq-fold-childContainer lhq-fold-selectContainer"
+            : "lhq-fold-childContainer"
+        }
         style={
           openEditor
             ? {
+                width: "100%",
                 height: "100%",
                 opacity: 1,
-                overflow: "hidden",
               }
-            : { height: "0", opacity: 0, overflow: "hidden" }
+            : { width: "100%", height: "0", opacity: 0 }
         }
       >
         {child}
@@ -53,7 +54,7 @@ function RowContent({ child, height }) {
         onMouseLeave={() => setShow(false)}
       >
         <button
-          style={show ? { display: "block" } : { display: "none" }}
+          style={show ? { opacity: 1 } : { opacity: 0 }}
           className={
             openEditor
               ? "lhq-arrow lhq-row-arrow-open"
@@ -91,22 +92,23 @@ function ColumnContent({ child, width }) {
   const [show, setShow] = useState(false);
   return (
     <div
-      className={
-        show
-          ? "lhq-fold-columnContainer lhq-fold-selectContainer"
-          : "lhq-fold-columnContainer"
-      }
+      className="lhq-fold-columnContainer"
       style={openEditor ? { width } : { width: "0" }}
     >
       <div
+        className={
+          show
+            ? "lhq-fold-childContainer lhq-fold-selectContainer"
+            : "lhq-fold-childContainer"
+        }
         style={
           openEditor
             ? {
                 width: "100%",
+                height: "100%",
                 opacity: 1,
-                overflow: "hidden",
               }
-            : { width: "0", opacity: 0, overflow: "hidden" }
+            : { width: "0", height: "100%", opacity: 0 }
         }
       >
         {child}
@@ -122,7 +124,7 @@ function ColumnContent({ child, width }) {
         onMouseLeave={() => setShow(false)}
       >
         <button
-          style={show ? { display: "block" } : { display: "none" }}
+          style={show ? { opacity: 1 } : { opacity: 0 }}
           className={
             openEditor
               ? "lhq-arrow lhq-column-arrow-open"
