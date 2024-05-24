@@ -14,7 +14,7 @@ function App() {
       <div className="main">
         <div className="drag">
           <p className="drag-title">体验Drag</p>
-          <div style={{ height: 700 }}>
+          <div style={{ height: 800 }}>
             <Drag
               children={[
                 <div style={{ height: "500px", backgroundColor: "pink" }}>
@@ -30,7 +30,7 @@ function App() {
         </div>
         <div className="fold">
           <p className="fold-title">体验RowFold</p>
-          <div style={{ height: 700 }}>
+          <div style={{ height: 800 }}>
             <RowFold
               children={[
                 <div style={{ height: 500, backgroundColor: "pink" }}>
