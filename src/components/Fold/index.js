@@ -149,7 +149,7 @@ function ColumnContent({ child, width }) {
  */
 export function ColumnFold({ children, width }) {
   return (
-    <div style={{ width: "100%", height: "100%" }}>
+    <div style={{ width: "100%", height: "100%", display: "flex" }}>
       {children.map((child, index) => (
         <ColumnContent key={index} child={child} width={width[index]} />
       ))}
