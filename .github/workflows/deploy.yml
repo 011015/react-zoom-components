@@ -6,7 +6,7 @@ name: Deploy Github Pages
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: 
+    branches:
       - main
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -31,6 +31,5 @@ jobs:
       - name: Deploy Github Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
           folder: experiment
