@@ -54,6 +54,9 @@ function RowContent({ child, height }) {
         onMouseEnter={() => setShow(true)}
         onMouseLeave={() => setShow(false)}
       >
+        {!show && !openEditor && (
+          <div style={{ border: "1px solid black" }}></div>
+        )}
         <button
           style={show ? { opacity: 1 } : { opacity: 0 }}
           className={
@@ -68,6 +71,9 @@ function RowContent({ child, height }) {
         >
           {openEditor ? <UpOutlined /> : <DownOutlined />}
         </button>
+        {!show && openEditor && (
+          <div style={{ border: "1px solid black" }}></div>
+        )}
       </div>
     </div>
   );
@@ -133,6 +139,9 @@ function ColumnContent({ child, width }) {
         onMouseEnter={() => setShow(true)}
         onMouseLeave={() => setShow(false)}
       >
+        {!show && !openEditor && (
+          <div style={{ border: "1px solid black" }}></div>
+        )}
         <button
           style={show ? { opacity: 1 } : { opacity: 0 }}
           className={
@@ -147,6 +156,9 @@ function ColumnContent({ child, width }) {
         >
           {openEditor ? <LeftOutlined /> : <RightOutlined />}
         </button>
+        {!show && openEditor && (
+          <div style={{ border: "1px solid black" }}></div>
+        )}
       </div>
     </div>
   );

@@ -34,6 +34,7 @@
 .lhq-arrow {
   padding: 4px;
   border: 1px solid #2e75d3;
+  cursor: pointer;
 }
 .lhq-row-arrow-open {
   border-radius: 8px 8px 0 0;
