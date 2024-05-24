@@ -22,15 +22,14 @@ function RowContent({ child, height }) {
   const [show, setShow] = useState(false);
   return (
     <div
-      className="lhq-fold-rowContainer"
+      className={
+        show
+          ? "lhq-fold-rowContainer lhq-fold-selectContainer"
+          : "lhq-fold-rowContainer"
+      }
       style={openEditor ? { height } : { height: "0" }}
     >
       <div
-        className={
-          show
-            ? "lhq-fold-childContainer lhq-fold-selectContainer"
-            : "lhq-fold-childContainer"
-        }
         style={
           openEditor
             ? {
@@ -41,7 +40,9 @@ function RowContent({ child, height }) {
             : { width: "100%", height: "0", opacity: 0 }
         }
       >
-        {child}
+        {React.cloneElement(child, {
+          style: { borderRadius: "6px", ...child.props.style },
+        })}
       </div>
       <div
         className="lhq-fold-arrowRowContainer"
@@ -79,7 +80,15 @@ function RowContent({ child, height }) {
  */
 export function RowFold({ children, height }) {
   return (
-    <div style={{ width: "100%", height: "100%" }}>
+    <div
+      style={{
+        width: "100%",
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
+        rowGap: 5,
+      }}
+    >
       {children.map((child, index) => (
         <RowContent key={index} child={child} height={height[index]} />
       ))}
@@ -92,15 +101,14 @@ function ColumnContent({ child, width }) {
   const [show, setShow] = useState(false);
   return (
     <div
-      className="lhq-fold-columnContainer"
+      className={
+        show
+          ? "lhq-fold-columnContainer lhq-fold-selectContainer"
+          : "lhq-fold-columnContainer"
+      }
       style={openEditor ? { width } : { width: "0" }}
     >
       <div
-        className={
-          show
-            ? "lhq-fold-childContainer lhq-fold-selectContainer"
-            : "lhq-fold-childContainer"
-        }
         style={
           openEditor
             ? {
@@ -111,7 +119,9 @@ function ColumnContent({ child, width }) {
             : { width: "0", height: "100%", opacity: 0 }
         }
       >
-        {child}
+        {React.cloneElement(child, {
+          style: { borderRadius: "6px", ...child.props.style },
+        })}
       </div>
       <div
         className="lhq-fold-arrowColumnContainer"
@@ -149,7 +159,9 @@ function ColumnContent({ child, width }) {
  */
 export function ColumnFold({ children, width }) {
   return (
-    <div style={{ width: "100%", height: "100%", display: "flex" }}>
+    <div
+      style={{ width: "100%", height: "100%", display: "flex", columnGap: 5 }}
+    >
       {children.map((child, index) => (
         <ColumnContent key={index} child={child} width={width[index]} />
       ))}

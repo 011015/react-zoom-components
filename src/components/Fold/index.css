@@ -1,22 +1,21 @@
 .lhq-fold-rowContainer {
   width: 100%;
   position: relative;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
 }
 .lhq-fold-columnContainer {
   height: 100%;
   display: flex;
   position: relative;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
 }
 
-.lhq-fold-childContainer {
-  border: 1px solid #d9d9d9;
-  border-radius: 6px;
-}
 .lhq-fold-selectContainer {
-  border: 1px solid #2e75d3;
-  border-radius: 6px;
+  border-color: #2e75d3;
 }
 
 .lhq-fold-arrowRowContainer {
