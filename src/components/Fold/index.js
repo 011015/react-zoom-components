@@ -28,22 +28,16 @@ export function RowFold({ children, height }) {
           <div
             className={
               show
-                ? "lhq-fold-container lhq-fold-selectContainer"
-                : "lhq-fold-container"
+                ? "lhq-fold-rowContainer lhq-fold-selectContainer"
+                : "lhq-fold-rowContainer"
             }
-            style={
-              openEditor
-                ? { height: height[index], flex: "1 1 0" }
-                : { height: "0" }
-            }
+            style={openEditor ? { height: height[index] } : { height: "0" }}
           >
             <div
-              className="lhq-fold-innerContainer"
               style={
                 openEditor
                   ? {
                       height: "100%",
-                      flex: "1 1 0",
                       opacity: 1,
                     }
                   : { height: "0", opacity: 0 }
@@ -74,6 +68,65 @@ export function RowFold({ children, height }) {
                 }}
               >
                 {openEditor ? <UpOutlined /> : <DownOutlined />}
+              </button>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+export function ColumnFold({ children, width }) {
+  const [openEditor, setOpenEditor] = useState(true);
+  const [show, setShow] = useState(false);
+  return (
+    <div style={{ width: "100%", height: "100%" }}>
+      {children.map((child, index) => {
+        return (
+          <div
+            className={
+              show
+                ? "lhq-fold-columnContainer lhq-fold-selectContainer"
+                : "lhq-fold-columnContainer"
+            }
+            style={openEditor ? { width: width[index] } : { width: "0" }}
+          >
+            <div
+              style={
+                openEditor
+                  ? {
+                      width: "100%",
+                      opacity: 1,
+                    }
+                  : { width: "0", opacity: 0 }
+              }
+            >
+              {child}
+            </div>
+            <div
+              className="lhq-fold-arrowColumnContainer"
+              style={
+                openEditor
+                  ? { transform: "translate(0, -50%)" }
+                  : { transform: "translate(100%, -50%)" }
+              }
+              onMouseEnter={() => setShow(true)}
+              onMouseLeave={() => setShow(false)}
+            >
+              <button
+                style={show ? { display: "block" } : { display: "none" }}
+                className={
+                  openEditor
+                    ? "lhq-arrow lhq-column-arrow-open"
+                    : "lhq-arrow lhq-column-arrow-close"
+                }
+                onClick={() => {
+                  setOpenEditor(!openEditor);
+                  setShow(!show);
+                }}
+              >
+                {openEditor ? <LeftOutlined /> : <RightOutlined />}
               </button>
             </div>
           </div>

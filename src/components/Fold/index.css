@@ -1,5 +1,12 @@
-.lhq-fold-container {
+.lhq-fold-rowContainer {
   width: 100%;
+  position: relative;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
+}
+.lhq-fold-columnContainer {
+  height: 100%;
   position: relative;
   border: 1px solid #d9d9d9;
   border-radius: 6px;
@@ -7,14 +14,6 @@
 }
 .lhq-fold-selectContainer {
   border-color: #2e75d3;
-}
-.lhq-fold-innerContainer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  row-gap: 5px;
-  padding: 5px;
-  overflow: auto;
 }
 
 .lhq-fold-arrowRowContainer {
