@@ -4,6 +4,7 @@
   border: 1px solid #d9d9d9;
   border-radius: 6px;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
+  overflow: auto;
 }
 .lhq-fold-columnContainer {
   height: 100%;
@@ -38,6 +39,7 @@
   height: 100%;
   padding: 4px;
   line-height: 100%;
+  border: 1px solid #2e75d3;
 }
 .lhq-row-arrow-open {
   border-radius: 8px 8px 0 0;
@@ -60,35 +62,35 @@
   width: 0;
   height: 0;
   transform: translate(0, 50%);
-  border-top: 20px black;
-  border-left: 20px transparent;
-  border-right: 20px transparent;
-  border-bottom: 20px transparent;
+  border-top: 10px solid black;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
 }
 .lhq-down-arrow {
   width: 0;
   height: 0;
   transform: translate(0, -50%);
-  border-top: 20px transparent;
-  border-left: 20px transparent;
-  border-right: 20px transparent;
-  border-bottom: 20px black;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid black;
 }
 .lhq-left-arrow {
   width: 0;
   height: 0;
   transform: translate(50%, 0);
-  border-top: 20px transparent;
-  border-left: 20px black;
-  border-right: 20px transparent;
-  border-bottom: 20px transparent;
+  border-top: 10px solid transparent;
+  border-left: 10px solid black;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
 }
 .lhq-right-arrow {
   width: 0;
   height: 0;
   transform: translate(-50%, 0);
-  border-top: 20px transparent;
-  border-left: 20px transparent;
-  border-right: 20px black;
-  border-bottom: 20px transparent;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid black;
+  border-bottom: 10px solid transparent;
 }

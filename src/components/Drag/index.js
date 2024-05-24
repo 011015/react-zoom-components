@@ -32,7 +32,7 @@ export default function Drag({ children, width }) {
           minWidth: "5%",
           maxWidth: "95%",
           width: `calc(${width[0]} + ${resize}px)`,
-          // ...children[0].props.style,
+          ...children[0].props.style,
         },
       })}
       <div
@@ -48,7 +48,7 @@ export default function Drag({ children, width }) {
           minWidth: "5%",
           maxWidth: "95%",
           width: `calc(${width[1]} - ${resize}px)`,
-          // ...children[1].props.style,
+          ...children[1].props.style,
         },
       })}
     </div>

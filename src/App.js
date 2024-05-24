@@ -17,10 +17,26 @@ function App() {
           <div style={{ height: 800 }}>
             <Drag
               children={[
-                <div style={{ height: 500, backgroundColor: "pink" }}>
+                <div
+                  style={{
+                    height: 500,
+                    backgroundColor: "pink",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
                   Left
                 </div>,
-                <div style={{ height: 500, backgroundColor: "purple" }}>
+                <div
+                  style={{
+                    height: 500,
+                    backgroundColor: "purple",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
                   Right
                 </div>,
               ]}
