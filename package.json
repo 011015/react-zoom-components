@@ -1,6 +1,6 @@
 {
   "name": "react-zoom-components",
-  "version": "1.0.0",
+  "version": "1.0.8",
   "description": "A React zoom component library",
   "main": "dist/index.min.js",
   "scripts": {
@@ -28,7 +28,7 @@
   "files": [
     "dist"
   ],
-  "devDependencies": {
+  "dependencies": {
     "@babel/core": "^7.24.5",
     "@babel/preset-env": "^7.24.5",
     "@babel/preset-react": "^7.24.1",

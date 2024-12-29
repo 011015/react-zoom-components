@@ -27,7 +27,7 @@ function RowContent({ child, height }) {
           ? "lhq-fold-rowContainer lhq-fold-selectContainer"
           : "lhq-fold-rowContainer"
       }
-      style={openEditor ? { height } : { height: "0" }}
+      style={openEditor ? { flex: `1 0 ${height}` } : { flex: "0" }}
     >
       <div
         style={
@@ -116,7 +116,7 @@ function ColumnContent({ child, width }) {
           ? "lhq-fold-columnContainer lhq-fold-selectContainer"
           : "lhq-fold-columnContainer"
       }
-      style={openEditor ? { width } : { width: "0" }}
+      style={openEditor ? { flex: `1 0 ${width}` } : { flex: "0" }}
     >
       <div
         style={
